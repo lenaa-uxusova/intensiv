@@ -1,5 +1,36 @@
 /*HEADER*/
+.menu {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
 
-/*MAIN*/
+}
+.header-row{
+   display: flex;
+   flex-direction:row;
+   align-items: center;
+}
+.header-logo
+{
+   display: flex;
+   flex-direction:row;
+   align-items: center;
+flex-grow:1;
+}
+
+.logo-img{
+   margin-right:40px;
+
+}
+.menu-item{
+   margin-right:10px;
+}
+/*MAIN-CARDS*/
+
+.cards-row{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
 
 /*FOOTER*/
