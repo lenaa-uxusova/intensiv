@@ -16,7 +16,7 @@
     width:100%;
     color: white;
     padding: 20px;
-    background: #151c39e8;
+    background: #FF4500;
 	box-sizing: border-box;
 }
 
@@ -60,12 +60,12 @@
 }
 
 .cards-title, .cards-description{
-    color: #151c39;
+    color: #8B0000;
     text-align: center;
 }
 
 .card{
-    padding: 25px;
+    padding: 30px;
     margin-top: 25px;
     width: 25%;
     background: white;
@@ -80,13 +80,13 @@
 
 .card-button{
     text-align: center;
-    background: #151c39;
+    background: #FFA500;
     padding: 10px 70px;
     border-radius: 10px;
 }
 
 .card-title, .card-text{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* Дополнительно */
