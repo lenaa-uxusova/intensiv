@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var  products = prompt ("введите цифру с продуктом:"+
+                         '\n1 - сыр - на 100 ккал;'+
+                         '\n2 - хлеб - на 120 ккал;'+
+                         '\n3 - макарошки- на 150 ккал;'+
+                         '\n4 - молоко- на 70 ккал;'+
+                         '\n5 - шоколад- на 200 ккал;'+
+                         '\n6 - мармеладки- на 1000 ккал;',1);
+  var mass = prompt ('введите сколько грамм вы съели:', 100);
+  switch (parseInt(products)) {
+        case 1:
+             alert ('вы съели '+ (100 * mass / 100)+'каллорий');
+             break;
+        case 2:
+             alert ('вы съели '+(120 * mass / 100)+'каллорий');
+             break;
+        case 3:
+             alert ('вы съели '+(150 * mass / 100)+'каллорий');
+             break;
+        case 4:
+             alert ('вы съели '+(70 * mass / 100)+'каллорий');
+             break;
+        case 5:
+             alert ('вы съели '+(200 * mass / 100)+'каллорий');
+             break;
+        case 6:
+             alert ('вы съели '+(1000 * mass / 100)+'каллорий');
+             break;
+        default:
+          alert('неизвестное значение');
+  }
+</script>
+</body>
+</html>
