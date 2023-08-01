@@ -7,11 +7,18 @@
 <body>
 
 <script>
-  var i=0 ;
-  while (i<10){
-    alert(i);
-    i++;
-  }
+  var num ;
+  while (true){
+     num = prompt ('введите число больше, которое больше 100',0);
+     if (num === null)  {
+     alert('нажали отмену');
+     break;
+  } else if (num > 100) {
+      alert ('все ок!')
+      break;
+  } else {
+    alert ('попробуй еще раз!')
+    }}
 
 </script>
 </body>
