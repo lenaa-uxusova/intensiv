@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom</title>
+<script>
+<!--document.body.innerHTML='какой-то текст'-->
+  function add_task(){
+  let tasks_list=document.getElementById('current')//поиск элемента по id
+  let new_task=document.createElement('li')//создание элемента списка
+  new_task.innerHTML=prompt('Что вам нужно сделать?') <!--  комментарий -->
+  tasks_list.appendChild(new_task)
+  }
+
+  function del_task(){
+ let tasks_list=document.getElementById('current')
+ let task_number=prompt('введите номер сделанной задачи')
+
+ let tasks_del_list=document.getElementById('done')
+ let del_task=tasks_list.childNodes[task_number-1].cloneNode(true)
+ tasks_del_list.appendChild(del_task)
+
+  tasks_list.removeChild(tasks_list.childNodes[task_number-1])
+
+  }
+</script>
+</head>
+<body>
+    <input value="Добавить задачу" onclick="add_task()" type="button">
+    <input value="Удалить задачу" onclick="del_task()" type="button">
+    <h1>Текущие задачи</h1>
+    <ol id="current"></ol>
+    <h1>Завершённые задачи</h1>
+    <ol id="done"></ol>
+</body>
+</html>
